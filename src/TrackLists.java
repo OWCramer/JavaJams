@@ -7,8 +7,6 @@ public class TrackLists {
 
         File trackList = new File("Tracks");
 
-        File[] tracks = trackList.listFiles();
-
-        return tracks;
+        return trackList.listFiles();
     }
 }

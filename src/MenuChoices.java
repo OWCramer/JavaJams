@@ -10,9 +10,9 @@ public class MenuChoices {
 
         //Asks user what to do
         while (true){
-            System.out.print("\nWhat would you like to do?\n(1.Make Track List)\n(2.View Track List)\n: ");
+            System.out.print("\nWhat would you like to do?\n(1.Make Track List)\n(2.View Track List)\n(3.Play Music)\n(4.Exit)\n: ");
             String choice = input.next();
-            if (choice.equals("1") | choice.equals("2")){
+            if (choice.equals("1") | choice.equals("2") | choice.equals("3") | choice.equals("4")){
                 return choice;
             }else{
                 System.out.println("You must enter a valid option");
