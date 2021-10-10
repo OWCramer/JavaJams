@@ -1,7 +1,10 @@
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.UnsupportedAudioFileException;
 import java.io.File;
+import java.io.IOException;
 
 public class JavaJams {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws UnsupportedAudioFileException, LineUnavailableException, IOException, InterruptedException {
 
         //Initializes Track List
         File[] tracks = new File[0];
@@ -28,11 +31,10 @@ public class JavaJams {
             }
             //Starts music player
             if (menuChoice.equals("3")) {
-                System.out.println("\nYour current track list is:");
                 if (tracks.length == 0){
-                    System.out.println("You dont have any tracks or haven't made a track list with option 1!");
+                    System.out.println("\nYou dont have any tracks or haven't made a track list with option 1!");
                 }else {
-                    MusicPlayerSettings.musicPlayer();
+                    MusicPlayerView.musicPlayer(tracks);
                 }
 
             }
