@@ -1,5 +1,4 @@
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class MenuChoices{
@@ -50,7 +49,12 @@ public class MenuChoices{
             //asks user which song to play
             System.out.println("Options (1.Return to main menu)(2.Stop)");
             int choice = input.nextInt();
-            return choice;
+            if(choice == 1 | choice == 2){
+                return choice;
+            }else{
+                System.out.println("That's not an option!");
+            }
+
         }
     }
 }

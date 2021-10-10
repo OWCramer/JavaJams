@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.IOException;
 
 public class JavaJams {
-    public static void main(String[] args) throws UnsupportedAudioFileException, LineUnavailableException, IOException, InterruptedException {
+    public static void main(String[] args) throws UnsupportedAudioFileException, LineUnavailableException, IOException{
 
         //Initializes Track List
         File[] tracks = new File[0];
