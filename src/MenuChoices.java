@@ -1,7 +1,7 @@
 import java.io.File;
 import java.util.Scanner;
 
-public class MenuChoices {
+public class MenuChoices{
 
     public static String starterChoice(){
 
